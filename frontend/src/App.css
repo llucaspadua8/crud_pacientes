@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+.App{
+    width: 60%;
+    margin: 0 auto;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.forms-container{
+    display: grid;
+    gap: 1em;
+    margin-top: 10px;
+}
+.forms-acoes{
+    display: flex;
+    gap: 8px;
+}
+
+.patients-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    @media (width < 720px) {
+        grid-template-columns: 1fr;
+    }
+}
+.patients-card{
+    background-color: #cfcfcf;
+    box-shadow: 0 4px 3px rgb(0 0 0 / 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 12px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.patients-info p{
+    font-size: 1.2rem;
+    padding: 3px;
+    text-align: center;
+}
+.patients-acoes{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
